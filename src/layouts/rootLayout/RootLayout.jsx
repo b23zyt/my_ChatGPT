@@ -15,7 +15,7 @@ const RootLayout = () => {
         <header>
             <Link to="/" className="logo">
                 <img src="/logo.png" alt=""/>
-                <span>CHAT AI</span>
+                <span>MYGPT</span>
             </Link>
             <div className="user">
                 <SignedOut>
