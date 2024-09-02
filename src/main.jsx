@@ -9,6 +9,8 @@ import RootLayout from './layouts/rootLayout/RootLayout'
 import DashboardLayout from './layouts/dashboardLayout/DashboardLayout'
 import SignInPage from './routes/signInPage/SignInPage'
 import SignUpPage from './routes/signUpPage/SignUpPage'
+import Terms from './routes/policyPage/Terms'
+import Policy from './routes/policyPage/policy'
 
 
 const router = createBrowserRouter([
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
         element: <SignUpPage/>
       },
       {
+        path: '/terms',
+        element: <Terms />
+      },
+      {
+        path: '/policy',
+        element: <Policy />
+      },
+      {
         element: <DashboardLayout />,
         children: [
           {
@@ -37,7 +47,7 @@ const router = createBrowserRouter([
           {
             path: "/dashboard/chats/:id",
             element: <ChatPage />,
-          }
+          },
         ]
       }
     ]
